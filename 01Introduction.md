@@ -452,5 +452,184 @@ example: center text
 example: 定理
 
 ```tex
+\documentclass[UTF8]{ctexart}
+\usepackage{amsthm}
 
+\begin{document}
+
+\newtheorem{theorem}{定理}
+
+\begin{theorem}[Placheral's Theorem]
+    This is theorem1
+\end{theorem}
+
+\begin{theorem}[Grey's Theorem]
+    This is theorem2
+\end{theorem}
+
+\begin{theorem}[Alpha's Theorem]
+    This is theorem3
+\end{theorem}
+
+\newtheorem{law}{定律}
+
+\begin{law}[Newton's law]
+    This is law1
+\end{law}
+
+\begin{law}[Fourier's law]
+    This is law2
+\end{law}
+
+\end{document}
+```
+
+example: piecewise function
+
+```tex
+\documentclass[UTF8]{ctexart}
+\usepackage{mathtools}
+
+\begin{document}
+
+\begin{align}
+    V(x)=\begin{cases}
+        0, &0<x<a;\\
+        \infty, &x<0, x>a;
+    \end{cases}
+\end{align}
+
+\begin{align}
+    \begin{rcases}
+        0, 0<x<a;\\
+        \infty, x<0, x>a
+    \end{rcases}=V(x)
+\end{align}
+
+\end{document}
+```
+
+example: space
+
+```tex
+\documentclass[UTF8]{ctexart}
+
+\begin{document}
+
+\bm{Grey}
+
+\texrm{Beta}
+
+\emph{James}
+
+hello\quad world
+
+hello\qquad world
+
+\end{document}
+```
+
+example: some tricks
+
+```tex
+\documentclass[UTF8]{ctexart}
+\usepackage{mathtools}
+\usepackage{bm}
+
+\begin{document}
+
+$\bm{Grey}$
+
+\textrm{Alpha}
+
+\emph{Moris}
+
+hello\quad world
+
+hello\quad\quad world
+
+hello\qquad world
+
+$ds^2=a^2$
+
+$\textrm{d}s^2=a^2$
+
+$this is not good$
+
+$\text{this is not good}$
+
+$\textrm{this is not good}$
+
+\end{document}
+```
+
+example: triangular
+
+```tex
+\begin{align}
+    sin\theta\\
+    \sin\theta\\
+    \lim
+\end{align}
+% \sin is recommended
+```
+
+example: table
+
+```tex
+\documentclass[UTF8]{ctexart}
+\usepackage{mathtools}
+\usepackage[backref]{hyperref}
+
+\begin{document}
+
+\begin{table}[!h]
+    \begin{center}
+        \begin{tabular}{c|c|c}
+            \hline
+            type & structure & number \\
+            \hline
+            a & square & 4\\
+            b & square & 4\\
+            c & square & 4\\
+            d & square & 4\\
+            \hline
+        \end{tabular}
+    \end{center}
+    \caption{This is a table}
+    \label{tb:1}
+\end{table}
+
+\begin{table}[!h]
+    \begin{center}
+        \begin{tabular}{|c|c|c|}
+            type & structure & number \\
+            \hline
+            a & square & 4\\
+            b & $E=mc^2$ & 4\\
+            c & square & 4\\
+            d & square & 4\\
+        \end{tabular}
+    \end{center}
+    \caption{This is a table}
+    \label{tb:2}
+\end{table}
+
+\begin{table}[!h]
+    \begin{center}
+        \begin{tabular}{|c|cc|}
+            type & structure & number \\
+            \hline
+            a & square & 4\\
+            b & $E=mc^2$ & 4\\
+            c & square & 4\\
+        \end{tabular}
+    \end{center}
+    \caption{This is a table}
+    \label{tb:3}
+\end{table}
+
+see Table~(\ref{tb:1}) and Table~(\ref{tb:2})
+
+\end{document}
 ```
