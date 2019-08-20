@@ -646,4 +646,15 @@ $A'^\mu$
 % $A^'\mu$  is wrong
 
 % tex中多行等同于一行；多个空格等同于一个空格
+
+% 文中加\footnote会变成编号
+% 标题加\footnote会变成星号
+
+% label可以加在equation, figure, table, chapter, section
+```
+
+example: reference
+
+```tex
+
 ```
