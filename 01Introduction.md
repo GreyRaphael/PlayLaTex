@@ -633,3 +633,17 @@ see Table~(\ref{tb:1}) and Table~(\ref{tb:2})
 
 \end{document}
 ```
+
+example: subscripte & upscript, and some tricks
+
+```tex
+$A^{\alpha\beta\gamma}_{ijk}$
+
+${A^{\alpha\beta\gamma}}_{ijk}$
+
+$A'^\mu$
+
+% $A^'\mu$  is wrong
+
+% tex中多行等同于一行；多个空格等同于一个空格
+```
