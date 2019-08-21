@@ -30,6 +30,8 @@ This is the context of the article.
 \input{Chapters/ch1.tex}
 \input{Chapters/ch2.tex}
 
+% \include{Chapter3/ch1.tex}
+
 \end{document}
 ```
 
@@ -701,4 +703,50 @@ you can find the theory in \cite{impj} and \cite{notes}
 }
 
 % vim:ts=4:sw=4
+```
+
+example: amthrsfs
+
+```tex
+\documentclass[UTF8]{ctexart}
+\usepackage{mathrsfs}
+\begin{document}
+
+$\mathcal{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
+
+$\dag$
+
+$\mathscr{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
+
+\end{document}
+```
+
+example: appendix
+
+附录和普通章节一样，只是附录之前有`\appendix`；再附录的标题上打`\label`就可以`\ref`
+
+```tex
+\documentclass[UTF8]{ctexart}
+\usepackage{hyperref}
+\begin{document}
+
+you can find solution in our 
+Appdendix-(\ref{appendix:a}), Appdendix-(\ref{appendix:b}) and Appdendix-(\ref{appendix:c})
+
+\newpage
+\appendix
+
+\section{Gradient $\Delta u$}
+\label{appendix:a}
+\input{Chapters/ch1.tex}
+
+\section{Divergence $\Delta\cdot\vec{A} $}
+\label{appendix:b}
+\input{Chapters/ch1.tex}
+
+\section{Rotation $\Delta\times\vec{A}$}
+\label{appendix:c}
+\input{Chapters/ch1.tex}
+
+\end{document}
 ```
