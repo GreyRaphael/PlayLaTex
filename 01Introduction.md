@@ -1,9 +1,14 @@
 # LaTex
 
-[Environment](http://www.ctex.org/HomePage)
+- [Environment](http://www.ctex.org/HomePage)
+- [Templates](https://www.latextemplates.com/)
+
+各种Latex文章可以再[arXiv](https://arxiv.org/search/?query=witten&searchtype=author)上找到一些
 
 Latex: 论文、排版、公式；
 > 交叉引用、目录、注释、角标
+
+Latex用途: Journal, Book, Thesis, Presentation, Poster, Resume...
 
 Refs:
 1. 刘海洋 《LaTeX入门》
@@ -91,6 +96,8 @@ example: math format
     f(x)=a+\left(\frac{x}{y}+666\right)
 \end{gather}
 % \left(, \right)跟随括号内容改变括号大小
+
+$\langle\frac{a}{b}\rangle$ % 尖括号
 
 % align &自定义对齐
 \begin{align}\label{eq:hello}
@@ -751,4 +758,16 @@ Appdendix-(\ref{appendix:a}), Appdendix-(\ref{appendix:b}) and Appdendix-(\ref{a
 \input{Chapters/ch1.tex}
 
 \end{document}
+```
+
+example: `\def`
+
+```tex
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+% 嫌麻烦，用简写
+
+\be
+    E=mc^2
+\ee
 ```
