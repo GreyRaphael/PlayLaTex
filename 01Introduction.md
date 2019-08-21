@@ -653,8 +653,19 @@ $A'^\mu$
 % label可以加在equation, figure, table, chapter, section
 ```
 
-example: reference
+example: reference & cite
 
 ```tex
+\documentclass[UTF8]{ctexart}
+\usepackage{hyperref}
+\begin{document}
 
+you can find the theory in \cite{impj} and \cite{notes}
+
+\begin{thebibliography}{10}
+    \bibitem{notes} John W. Dower {\emph{Readings compiled for History 21.479.}} 1991.
+    \bibitem{impj}  The Japan Reader {\emph{Imperial Japan 1800-1945}} 1973: Random House, N.Y.
+\end{thebibliography}
+
+\end{document}
 ```
