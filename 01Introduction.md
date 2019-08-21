@@ -761,8 +761,20 @@ Appdendix-(\ref{appendix:a}), Appdendix-(\ref{appendix:b}) and Appdendix-(\ref{a
 ```
 
 example: `\def`
+> [format example](https://arxiv.org/format/1803.04993)
 
 ```tex
+\def\Hom{\mathrm{Hom}}
+\def\H{{\mathcal H}}
+\def\d{{\mathrm d}}
+\def\t{\widetilde}
+\def\U{{\mathcal U}}
+\def\UU{{\mathrm U}}
+\def\V{{\mathcal V}}
+\def\st{{\sf t}}
+\def\O{{\mathcal O}}
+\def\i{{\mathrm i}}
+\def\A{{\mathcal A}}
 \def\be{\begin{equation}}
 \def\ee{\end{equation}}
 % 嫌麻烦，用简写
