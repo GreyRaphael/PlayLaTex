@@ -645,6 +645,14 @@ $A'^\mu$
 
 % $A^'\mu$  is wrong
 
+% 黑体加直体
+$\mathbf{T}$
+
+% bar vs overline
+$\bar{abc}$
+
+$\overline{abc}$
+
 % tex中多行等同于一行；多个空格等同于一个空格
 
 % 文中加\footnote会变成编号
@@ -658,6 +666,7 @@ example: reference & cite
 ```tex
 \documentclass[UTF8]{ctexart}
 \usepackage{hyperref}
+\usepackage{mathtools}
 \begin{document}
 
 you can find the theory in \cite{impj} and \cite{notes}
@@ -668,4 +677,28 @@ you can find the theory in \cite{impj} and \cite{notes}
 \end{thebibliography}
 
 \end{document}
+```
+
+现在一般不这么干，都是.bib文件中写入如下内容，然后`\cite{tes-en}` or `\cite{tes-zh}`
+
+```bib
+@article{test-en,
+	author = {Author},
+	title = {Title},
+	type = {J},
+	journal = {Journal},
+	date = {2014-04-01},
+	language = {english},
+}
+
+@article{test-zh,
+	author = {作者},
+	title = {标题},
+	type = {J},
+	journal = {期刊},
+	date = {2014-04-01},
+	language = {chinese},
+}
+
+% vim:ts=4:sw=4
 ```
